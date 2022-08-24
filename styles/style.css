@@ -1,0 +1,114 @@
+:root{
+    --preto: #060508;
+    --lilas: #271F44;
+    --fundo: #0E0B14;
+    --text_fundo: #a2a9af;
+    --texto: #F9F9F9;
+}   
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.topo_pagina{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--preto);
+    height: 5rem;
+    
+}
+
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.text_topo a{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    color: #F9F9F9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo{
+    width: 9rem;
+}
+
+.espn{
+    width: 24px;
+    height: 24px;
+}
+
+.login{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.login img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.login a{
+    color: #F9F9F9;
+    padding-top: 1rem;
+}
+
+.pagina_site img{
+    width: 100%;
+    height: 45rem;
+    
+}
+
+.infor_conteudo{
+    
+    list-style: none;
+}
+
+.infor_sites{
+    list-style: none;
+    
+}
+
+.infor_sites img{
+    width: 20px;
+    height: 20px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--fundo);
+    color: var(--text_fundo);
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+
+.img_fundo img{
+    width: 7rem;
+    
+}
+
+.rodape_politicas{
+    display: flex;
+    gap: 1rem;
+}
+
+.rodape_infor{
+    display: flex;
+    gap: 1rem;
+}
