@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/styles/style.css" >
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css"> 
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,26 +70,68 @@
         </nav>
 
         <div class="login">
-            <a>Edilson</a>
+            <span>Edilson</span>
             <img src="/img/graves.png">
             
         </div>
     </header>
 
     <main class="pagina_site">
-        <img src="/img/supernatural.png">
-        <div class="infor_conteudo">
-            <h2>Supernatural</h2>
-            <p>Só no Star+</p>
-            <div class="infor_sites">
-                <img src="/img/A14.jpg">
-                <span>2005 - 2020 / min / Drama, Terror, Fantasia</span>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/img/supernatural.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sobrenatural</h5>
+                    <p>Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros. Velhos truques, armas e esconderijos não funcionam mais e seus amigos os traem, forçando os irmãos a contar um com o outro enquanto enfrentam novos inimigos.</p>
+                </div>
+            </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/img/game of trones.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Game of thrones</h5>
+                    <p>Sucesso entre os livros mais vendidos, a série de obras "A Song of Ice and Fire", de George R.R. Martin, é levada à tela quando HBO decide navegar a fundo pelo gênero e recriar a fantasia medieval épica..</p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                    <img src="/img/arrow.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Arrow</h5>
+                    <p>Após um violento naufrágio, o playboy milionário Oliver Queen é dado como morto. Cinco anos depois, é resgatado de uma ilha do Pacífico e enviado de volta para Starling City, onde passa a agir como vigilante secreto.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         
     </main>
 
     <div class="container">
+
+        <div id="populares">
+
+        </div>
+
+        <div class="recomendado">
+
+        </div>
+
+
+        <div class="proximos_lançamentos">
+
+        </div>
 
     </div>
 
@@ -97,29 +141,26 @@
         </div>
 
         <div class="rodape_politicas">
-            <h6>Política de Privacidade</h6>
-            <h6>Proteção de Ddos no Brasil</h6>
-            <h6>Contrato de Assinatura</h6>
+            <span>Política de Privacidade</span>
+            <span>Proteção de Ddos no Brasil</span>
+            <span>Contrato de Assinatura</span>
         </div>
 
         <div class="rodape_infor">
-            <h6>Ajuda</h6>
-            <h6>Dispositivos Compatíveis</h6>
-            <h6>Sobre o Star+</h6>
-            <h6>Anúncios personalizados</h6>
+            <span>Ajuda</span>
+            <span>Dispositivos Compatíveis</span>
+            <span>Sobre o Star+</span>
+            <span>Anúncios personalizados</span>
         </div>
 
-        <div>
-            <article>
-
-            </article>
-        </div>
 
         <div class="rodape_direitos">
-            <h6>© Disney. Todos os direitos reservados.</h6>
+            <span>© Disney. Todos os direitos reservados.</span>
         </div>
     </footer>
 
     <script src="/script/script.js"></script>
+    <script src="/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+    <script src="/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
