@@ -4,12 +4,12 @@ const url_img = 'https://image.tmdb.org/t/p/w500/'
 
 
 
-fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BR&page=30'
+fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BR&page=2'
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) =>{
 
-    const filmes_populares = document.querySelector('#populares');
+    const filmes_populares = document.querySelector('.owl-carousel');
 
     jsonParsed.results.forEach(element =>{
 
@@ -19,6 +19,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae449
         const data_lan = element.release_date
         const pontuação = element.vote_average
 
+        
         filme_popular(title,descrição,img,data_lan,pontuação, filmes_populares);
 
     })
@@ -42,8 +43,9 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     pont.textContent = pontuação
     imagem.src = url_img + img
 
-    divPai.classList.add('conteudo')
+    divPai.classList.add('item')
     divFilho.classList.add('conteudo_filme')
+    imagem.classList.add('box-filme')
 
     filmes_populares.appendChild(divPai)
     divPai.appendChild(imagem)
@@ -53,3 +55,4 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     divFilho.appendChild(data)
     divFilho.appendChild(pont)
 }
+
