@@ -68,31 +68,24 @@ body .login span{
 
 .pagina_site img{
     width: 20rem;
-    height: 30rem;
+    height: 40rem;
     
 }
 
-
-
-.carousel-caption h5,p{
-    color: #F9F9F9;
-}
-
-.populares p{
-    color: var(--preto);
+.carrosel-filmes{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo);
 }
 
 .conteudo{
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.conteudo img{
-    width: 15rem;
-    height: 15rem;
-}
-
-.conteudo_filme p{
-    color: var(--preto);
+.populares h4{
+    margin: 2rem;
+    color: var(--texto);
 }
 
 .filmes_populares{
@@ -106,7 +99,7 @@ body .login span{
 }
 
 .box-filme{
-    height: 200px;
+    height: 300px;
     width: 200px;
     margin: 10px;
 

@@ -1,10 +1,9 @@
-
 const Api_Key = 'a0ad9bc5d78247124ae4492e01c51b1b'
 const url_img = 'https://image.tmdb.org/t/p/w500/'
 
 
 
-fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BR&page=2'
+fetch('https://api.themoviedb.org/3/tv/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BRS&page=1'
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) =>{
@@ -13,7 +12,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae449
 
     jsonParsed.results.forEach(element =>{
 
-        const title = element.title
+        const title = element.name
         const descrição = element.overview
         const img = element.poster_path
         const data_lan = element.release_date
@@ -65,4 +64,3 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     divFilho.appendChild(data)
     divFilho.appendChild(pont)
 }
-
