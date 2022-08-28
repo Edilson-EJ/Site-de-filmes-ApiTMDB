@@ -15,7 +15,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=a0ad9bc5d78247124ae4492e0
         const title = element.name
         const descrição = element.overview
         const img = element.poster_path
-        const data_lan = element.release_date
+        const data_lan = element.first_air_date
         const pontuação = element.vote_average
 
         
@@ -35,12 +35,10 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     const imagem = document.createElement('img')
     const divFilho = document.createElement('div')
     const titulo = document.createElement('p')
-    const descr = document.createElement('p')
     const data = document.createElement('p')
     const pont = document.createElement('p')
 
     titulo.textContent = title
-    descr.textContent = descrição
     data.textContent = data_lan
     pont.textContent = pontuação
     imagem.src = url_img + img
@@ -60,7 +58,6 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     divButton.appendChild(button)
     div.appendChild(imagem)
     divFilho.appendChild(titulo)
-    divFilho.appendChild(descr)
     divFilho.appendChild(data)
     divFilho.appendChild(pont)
 }

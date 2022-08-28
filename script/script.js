@@ -31,21 +31,22 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
 
     const divPai = document.createElement('div')
     const div = document.createElement('div')
+    const divInfo = document.createElement('div')
     const divButton = document.createElement('div')
     const button = document.createElement('button')
+    const button_infor = document.createElement('button')
     const imagem = document.createElement('img')
     const divFilho = document.createElement('div')
     const titulo = document.createElement('p')
-    const descr = document.createElement('p')
     const data = document.createElement('p')
     const pont = document.createElement('p')
 
     titulo.textContent = title
-    descr.textContent = descrição
     data.textContent = data_lan
     pont.textContent = pontuação
     imagem.src = url_img + img
     button.textContent= "Assistir"
+    button_infor.textContent="Informações"
 
     divPai.classList.add('item_filmes')
 
@@ -53,16 +54,19 @@ function filme_popular(title, descrição, img, data_lan, pontuação, filmes_po
     imagem.classList.add('box')
     div.classList.add('img_filme')
     divButton.classList.add('button_filme')
+    divInfo.classList.add('info_filme')
+
 
     filmes_populares.appendChild(divPai)
     divPai.appendChild(div)
     divPai.appendChild(divFilho)
+    divPai.appendChild(divInfo)
     divPai.appendChild(divButton)
     divButton.appendChild(button)
+    divButton.appendChild(button_infor)
     div.appendChild(imagem)
     divFilho.appendChild(titulo)
-    divFilho.appendChild(descr)
-    divFilho.appendChild(data)
-    divFilho.appendChild(pont)
+    divInfo.appendChild(data)
+    divInfo.appendChild(pont)
 }
 
