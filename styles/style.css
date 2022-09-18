@@ -80,6 +80,7 @@ body .login span{
     display: flex;
     flex-direction: column;
     background-color: var(--fundo);
+    width: 100%;
 }
 
 .conteudo{
@@ -114,6 +115,30 @@ body .login span{
     cursor: pointer;
     
 }
+
+.button{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    gap: 1rem;
+    margin:auto;
+    background-color: var(--fundo);
+    padding: 2rem 0rem;
+    font-size: 1.1rem;
+}
+
+.button button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #edd269;
+    color: #0E0B14;
+}
+
+.button button:hover{
+    background-color: #0E0B14;
+    color: #edd269;
+}
+
 
 
 .rodape{

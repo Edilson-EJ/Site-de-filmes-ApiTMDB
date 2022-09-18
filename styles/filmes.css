@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container_cont{
     background-color: #0E0B14;
     margin-top: 0;
     
@@ -28,7 +28,6 @@ div .fundo_filme{
 .item_filmes{
     display: flex;
     flex-direction: column;
-   
     background-color: #14111c;
     color: #F9F9F9;
 }

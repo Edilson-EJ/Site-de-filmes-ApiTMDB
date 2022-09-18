@@ -2,9 +2,9 @@
 const Api_Key = 'a0ad9bc5d78247124ae4492e01c51b1b'
 const url_img = 'https://image.tmdb.org/t/p/w500/'
 
+var numero = 1;
 
-
-fetch('https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BR&page=1'
+fetch(`https://api.themoviedb.org/3/movie/popular?api_key=a0ad9bc5d78247124ae4492e01c51b1b&language=pt-BR&page=${numero}`
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) =>{
@@ -75,3 +75,18 @@ function filme_popular(title, descrição, img, pontuação, filmes_populares){
     divInfo.appendChild(pont)
 }
 
+function anterior(){
+    console.log('entrou!!')
+    if( numero != 1 && numero != 0){
+        numero = numero - 1;
+        
+    }
+
+    console.log('anterio', numero)
+}
+
+function proximo(){
+    numero = numero + 1;
+    console.log('proximo', numero)
+
+}
